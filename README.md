@@ -131,3 +131,22 @@ bank-bill-pay/
 - `backend/main-war/` contains only application composition, deployment configuration, and end-to-end integration work. It consumes the module JARs and produces the deployable WAR. Business logic does not belong here.
 - `backend/contracts/` is the deliberate boundary between frontend and backend, and between backend modules. It holds versioned request/response shapes, event definitions, and shared models.
 - `database/migrations/` is append-only. A released migration must never be edited or renamed; corrections are new migrations.
+
+## Tech Stack
+    Frontend: 
+        - React Native
+        - Typescript
+        - Node
+        - Bun
+        - Webpack
+    Backend:
+        - Gradle
+        - Spring Boot
+        - Java JDK 25
+        - Jboss
+    Database:
+        - postgresql
+        - pgadmin
+    Tools:
+        - Postman
+        - Docker

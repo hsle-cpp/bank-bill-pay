@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: bill_pay_application
+      POSTGRES_USER: bill_pay
+      POSTGRES_PASSWORD: bill_pay
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bill_pay -d bill_pay_application"]
+      interval: 5s
+      timeout: 5s
+      retries: 10

@@ -1,0 +1,8 @@
+{
+  "expo": {
+    "name": "Bill Pay Application",
+    "slug": "bill-pay-application",
+    "platforms": ["web"],
+    "web": { "bundler": "metro" }
+  }
+}

@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/bill_pay_application}
+    username: ${DATABASE_USERNAME:bill_pay}
+    password: ${DATABASE_PASSWORD:bill_pay}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    locations: classpath:db/migration

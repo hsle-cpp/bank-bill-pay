@@ -1,0 +1,35 @@
+# Spring Boot backend (Maven multi-module).
+
+# --- Maven ----------------------------------------------------------
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# --- Gradle (the tech stack lists Gradle; kept in case the build moves) --
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# --- Java -----------------------------------------------------------
+*.class
+hs_err_pid*
+replay_pid*
+.attach_pid*
+
+# --- Spring Boot ----------------------------------------------------
+HELP.md
+# Personal profile overrides (run with SPRING_PROFILES_ACTIVE=local)
+application-local.yaml
+application-local.yml
+application-local.properties
